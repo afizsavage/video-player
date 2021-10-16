@@ -1,14 +1,22 @@
 import _ from "lodash";
 import "./style.css";
 
-function component() {
-  const element = document.createElement("div");
+function Header() {
+  const header = document.createElement("header");
 
-  // Lodash, now imported by this script
-  element.classList.add("bg-red-700");
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
+  header.classList.add("header");
+  header.innerHTML = _.join(["Hello"], " ");
 
-  return element;
+  return header;
 }
 
-document.body.appendChild(component());
+const Page = () => {
+  const container = document.createElement("div");
+
+  container.classList.add("page");
+  container.appendChild(Header());
+
+  return container;
+};
+
+document.body.appendChild(Page());
