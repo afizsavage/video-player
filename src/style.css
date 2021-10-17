@@ -6,6 +6,9 @@
   .page {
     @apply h-full w-full overflow-hidden overflow-y-scroll;
   }
+  .logo {
+    @apply h-14 w-20;
+  }
   .header {
     @apply w-full fixed top-0 z-50;
   }

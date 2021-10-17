@@ -1,11 +1,17 @@
 import _ from "lodash";
 import "./style.css";
+import LogoImg from "./assets/logo.png";
+
+const Logo = new Image();
+Logo.src = LogoImg;
+Logo.width = 30;
 
 function Header() {
   const header = document.createElement("header");
 
   header.classList.add("header");
-  header.innerHTML = _.join(["Hello"], " ");
+  // header.innerHTML = _.join(["Hello"], " ");
+  header.appendChild(Logo);
 
   return header;
 }
