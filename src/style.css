@@ -10,6 +10,6 @@
     @apply h-14 w-20;
   }
   .header {
-    @apply w-full fixed top-0 z-50;
+    @apply w-full fixed top-0 z-50 px-4 bg-gray-500;
   }
 }
